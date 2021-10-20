@@ -41,7 +41,7 @@ def calc_reaction_rate(xs_data, energy_spectrum):
         Columns contain energy dependent cross section data in 
         units of barn.
     energy_spectrum : pd.DataFrame or pd.Series
-        Columns contain the energy spetrum counts.
+        Columns contain the energy spectrum counts.
     
     Returns
     -------
@@ -145,6 +145,9 @@ def ratio_plutonium_function(spectrum, phi_0, pu_0, cross_sections,
         of the indicator element.
     n_0 : np.ndarray
         The natural isotopic vector of the indicator element.
+    idx : list or array, len = 2
+        The components of the isotopic vector that are divided to 
+        calculate the ratio.
         
     Returns
     -------
