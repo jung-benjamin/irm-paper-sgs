@@ -43,10 +43,10 @@ def calc_reaction_rate(xs_data, energy_spectrum):
     energy_spectrum : pd.DataFrame or pd.Series
         Columns contain the energy spetrum counts.
     
-    Output
-    ------
-    og_xs
-        series, one-group cross-section for each column of xs_data
+    Returns
+    -------
+    rate : pd.Series
+        One reaction rate for each reactin in xs_data
     """
     df = pd.DataFrame()
     for name, column in xs_data.items():
