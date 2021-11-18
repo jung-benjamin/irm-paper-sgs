@@ -6,8 +6,10 @@ We cannot provide a complete, integrated implentation, since this would require 
 
 ## IRM Implementation
 The jupyter notebook `irm_demonstration.ipynb` explains the IRM reconstruction procedure as we implemented it for the analysis presented in the manuscript. 
-All functions defined in the notebook are also defined in the `average_batch_irm.py` file. 
+All functions defined in the notebook are also defined in the `average_batch_irm.py` file so that they can be used without the jupyter notebook. 
 Example data is provided to enable users to run the notebook in its current state.
+
+The `irm_with_samples.ipynb` notebook shows how the IRM implementation is applied to the results of a set of reactor simulations with varied input parameters. 
 
 ## Cross-Section Uncertainty
 The jupyter notebook `xs_uncertainty.ipynb` illustrates how the uncertainty intervals for the cross-section parameters were estimated.
